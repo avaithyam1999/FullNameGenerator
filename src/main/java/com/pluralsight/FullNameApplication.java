@@ -1,0 +1,37 @@
+package com.pluralsight;
+
+import java.util.Scanner;
+
+public class FullNameApplication {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter your First Name: ");
+        String firstName = scanner.nextLine();
+
+        System.out.println("Enter your Middle Name if you have one: ");
+        String middleName = scanner.nextLine();
+
+        System.out.println("Enter your Last Name: ");
+        String lastName = scanner.nextLine();
+
+        System.out.println("Enter your suffix if you have one: ");
+        String suffix = scanner.nextLine();
+
+        System.out.println("Your full name is " + joinedName(firstName, middleName, lastName, suffix));
+    }
+    public static String joinedName(String firstName, String middleName, String lastName, String suffix) {
+        if (suffix.equals("") && middleName.equals("")) {
+            return firstName + " " + lastName;
+        }
+        else if (suffix.equals("")) {
+            return firstName + " " + middleName + " " + lastName;
+        }
+        else if (middleName.equals("")) {
+            return firstName + " " + lastName + ", " + suffix;
+        }
+        else {
+            return firstName + " " + middleName + " " + lastName + ", " + suffix;
+        }
+    }
+}
