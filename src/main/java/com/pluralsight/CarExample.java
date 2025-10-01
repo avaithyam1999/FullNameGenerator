@@ -5,7 +5,11 @@ public class CarExample {
         Car car1 = new Car();
         car1.setMake("BMW");
         car1.setModel("M3CS");
+        car1.display();
 
-        System.out.println(car1.getMake() + " " + car1.getModel());
+        Car car2 = new Car();
+        car2.setMake("Porsche");
+        car2.setModel("911 GT3");
+        car2.display();
     }
 }
