@@ -38,8 +38,3 @@ public class TheaterReservations {
         }
     }
 }
-//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-//        Scanner scanner = new Scanner(System.in);
-//        String dateAsString = scanner.nextLine();
-//        LocalDate day = LocalDate.parse(dateAsString, formatter);
-//        String movieDate = day.format(formatter);
